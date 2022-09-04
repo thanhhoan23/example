@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// xác nhận thông tin đầu vào và đưa ra quyết định dựa trên những thông tin đó.
+
+        function getConfirm(answer) {
+            let outcome = "";
+            if (answer) {
+                outcome = "ghe ta, ghe qua ghe";
+            } else {
+                outcome = "sao khu tra loi zi";
+            }
+            return outcome;
+        }
+        let confirmAnswer = confirm ("Are you sure?");
+        let receive = getConfirm(confirmAnswer);
+        document.write(receive); 
+    </script>
+</body>
+</html>
